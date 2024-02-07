@@ -22,7 +22,11 @@ namespace Business.Concrete
 
             if (_applicantService.CheckPerson(person)) 
             {
-                Console.WriteLine("Mask given for " + person.Name);
+                Console.WriteLine(person.Name + " maske verildi.");
+            }
+            else
+            {
+                Console.WriteLine(person.Name + " maske verilemedi.");
             }
         }
     }

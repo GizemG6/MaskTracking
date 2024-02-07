@@ -151,7 +151,7 @@ namespace MernisServiceReference
         {
         }
         
-        public System.Threading.Tasks.Task<MernisServiceReference.TCKimlikNoDogrulaResponse> TCKimlikNoDogrulaAsync(long citizenId, MernisServiceReference.TCKimlikNoDogrulaRequest request)
+        public System.Threading.Tasks.Task<MernisServiceReference.TCKimlikNoDogrulaResponse> TCKimlikNoDogrulaAsync(MernisServiceReference.TCKimlikNoDogrulaRequest request)
         {
             return base.Channel.TCKimlikNoDogrulaAsync(request);
         }
@@ -201,12 +201,7 @@ namespace MernisServiceReference
             }
             throw new System.InvalidOperationException(string.Format("Could not find endpoint with name \'{0}\'.", endpointConfiguration));
         }
-
-        public Task<TCKimlikNoDogrulaResponse> TCKimlikNoDogrulaAsync(TCKimlikNoDogrulaRequest request)
-        {
-            throw new NotImplementedException();
-        }
-
+        
         public enum EndpointConfiguration
         {
             

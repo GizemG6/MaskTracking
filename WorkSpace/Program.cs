@@ -37,7 +37,10 @@ namespace WorkSpace
             }
 
             Person person1 = new Person();
-            person1.Name = "Gizem";
+            person1.Name = "GİZEM";
+            person1.Surname = "GÜNEŞ";
+            person1.BirthDate = 1996;
+            person1.CitizenId = 12345678901;
 
             PttManager pttManager = new PttManager(new PersonManager());
             pttManager.GiveMask(person1);
@@ -56,7 +59,7 @@ namespace WorkSpace
             string name = "Gizem";
             string surname = "Güneş";
             int birthDate = 1996;
-            long citizenId = 12345678910;
+            long citizenId = 12345678901;
 
             Console.WriteLine(message);
             Console.WriteLine(price * 1.18);
